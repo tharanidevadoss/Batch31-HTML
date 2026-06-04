@@ -1,0 +1,52 @@
+1.ls
+2.cd D:/Foldername
+3.git init
+B4 and after add remote, check with git config -l
+4.git remote add origin https://github.com/tharanidevadoss/batch23gittest.git
+git status ->untracked file
+
+NOTE: IF git remote origin already exists,First remove then add,git remote remove origin.
+5.git remote -v
+6.git add .
+7.git commit -m "commit message"
+Note:authorization When u  commit first time,
+git config --global user.name
+git config --global user.email
+8.git push -u origin master
+Remove:git remote remove origin(require use)
+
+ After adding and modifying:
+Go to git bash ,
+To verify remote origin repo ->git remote -v or git config -l
+To know the status ->git status
+To sees the log and compare with local and git ->git log
+1.git add .
+2.git commit -m "modified"
+3.git push
+
+To delete git config repo in local folder/
+rm -rf .git
+
+
+
+
+STEPS TO CREATE BRANCH:
+1.ls
+2.cd D:/Foldername
+3.git init
+4.git remote add origin https://github.com/tharanidevadoss/batch23gittest.git
+5.git remote -v
+6.git add .
+7.git commit -m "commit message"
+After uploading files in a branch ,have to upload the same file to another new branch
+8.git branch
+9.git branch branchname
+10.git checkout  branchname
+11.git add .
+12.git commit -m "commit message"
+13.git push -u origin master
+
+Have to upload the updated files from a branch to the existing branch
+1.git checkout master
+2.git pull origin test(Put git log to check the status)
+3.git push 
